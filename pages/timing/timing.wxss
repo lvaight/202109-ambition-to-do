@@ -1,0 +1,40 @@
+/**timing.wxss**/
+page{
+  background-color: #E7624F;
+}
+
+.countdownContainer {
+  width: 400rpx;
+  height: 400rpx;
+  /* background-color: aliceblue; */
+  margin-top: 15% auto;
+  position: relative;
+}
+
+.countdownContainer .counting_circle {
+  width: 400rpx;
+  height: 400rpx;
+  position: absolute;
+  left: 0;
+  top: 0 ;
+}
+
+.counting_number {
+  position: relative;
+  top: 43%;
+  font: bolder;
+  text-align: center;
+  font-size: large;
+}
+
+.ending_tips {
+  position: relative;
+  top: 43%;
+  font: bolder;
+  text-align: center;
+  font-size: small;
+}
+
+.timingButton {
+  margin:0 auto;
+}

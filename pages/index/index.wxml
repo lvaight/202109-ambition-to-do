@@ -1,0 +1,33 @@
+<!--index.wxml-->
+
+<view class="container">
+
+<view class="timing-slider">
+  <slider min='1' max="60" value="{{timing_time}}" backgroundColor="#E7624F" show-value="true" bindchange="TimingTimeRefresh"></slider>
+</view>
+
+<view class="motto">
+  <!-- 选择专注任务 -->
+  <view style="margin: 20rpx auto; font-size: large;">{{motto_1}}</view>
+  <!-- 完成任务以获得xx专注积分 -->
+  <view style="margin: 20rpx auto; font-size: xx-small; color:  gray;">{{motto_2}}{{timing_time}}专注积分</view>
+</view>
+
+<view class="task_cate">
+  <!-- 遍历js文件中的分类列表cateArr中的每项（item），将每个item所对应的分类名和图标显示出来 -->
+  <view wx:for="{{cateArr}}" class="cate_item" wx:key="cate" bindtap="clickCate"
+    data-index="{{index}}">
+      <view class="cate_icon"> <image src="../../images/{{item.icon}}.png"></image> </view>
+      <view class='cate_text {{index == cateActive ? "cate_text_active" : ""}}'>{{item.text}}</view>
+  </view>
+</view>
+
+<view style="margin: 0 auto; font-size: small; color: green;">当前剩余专注积分：{{remain_credit_index}} (ง •`_•)ง</view>
+
+
+<view>
+  <button class="button" bindtap="go_to_timing_page"> 开始专注 </button>
+</view>
+
+
+</view>

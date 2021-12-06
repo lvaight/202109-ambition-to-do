@@ -1,0 +1,41 @@
+/**index.wxss**/
+
+.timing-slider{
+  width: 600rpx;
+  margin: auto;
+}
+
+.motto{
+  font-size: 30rpx ;
+  text-align: center;
+  margin: 30rpx 10rpx auto;
+}
+
+.task_cate{
+  width: 660rpx;
+  margin: 5% auto 3%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.task_cate .cate_item{
+  width: 220rpx;
+  height: 130rpx;
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+.task_cate .cate_item .cate_icon{
+  height: 70rpx;
+}
+.task_cate .cate_item .cate_icon image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.task_cate .cate_item .cate_text{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+}
+.task_cate .cate_item .cate_text_active{
+  color: #E7624F;
+}
+

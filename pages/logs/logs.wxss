@@ -1,0 +1,88 @@
+
+.sum{
+  display: flex;
+  flex-wrap: wrap;
+  width: 700rpx;
+  height: 600rpx;
+  border: 30rpx solid #E7624F;
+  margin: auto;
+}
+.sum .sum_item{
+  width: 300rpx;
+  text-align: center;
+  margin: 0 auto;
+}
+.sum .sum_item .sum_item_title{
+  height: 120rpx;
+  line-height: 120rpx;
+  font-size: 30rpx;
+  color: #6B747E;
+}
+.sum .sum_item .sum_item_val{
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #E7624F;
+}
+.detail{
+  /* width: 700rpx;
+  margin: 0 auto; */
+
+  
+  width: 700rpx;
+  border: 30rpx solid #E7624F;
+  margin: auto;
+}
+
+.detail_list{
+  margin-top: 70rpx;
+  margin-bottom: 100rpx;
+  text-align: center;
+
+}
+.detail_title{
+  display: flex;
+  /* height: 60rpx; */
+  line-height: 60rpx;
+  margin: 30rpx 50rpx 0 50rpx;
+}
+.detail_title .detail_title_text{
+  flex: 1;
+  font-size: 35rpx;
+}
+.detail_title .detail_title_type{
+  flex: 1;
+  text-align: right;
+  font-size: 20rpx;
+}
+.detail_title .detail_title_type text{
+  margin-left: 10rpx;
+}
+.active{
+  color: #E7624F;
+}
+.list_item{
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+/* .list_item > view{
+  width: 200rpx;
+} */
+.list_item .list_item_date{
+  width: 350rpx;
+  font-size: 30rpx;
+  text-align: left;
+}
+.list_item .list_item_cate{
+  width: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.list_item .list_item_time{
+  width: 250rpx;
+  font-size: 30rpx;
+  text-align: right;
+}

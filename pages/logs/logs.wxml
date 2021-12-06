@@ -1,0 +1,46 @@
+<!--logs.wxml-->
+<view class="sum">
+  <view class="sum_item" wx:for="{{sum}}" wx:key="sum">
+  <!-- wx:for用于循环数组，所以下面的是遍历js文件里sum数组内的item -->
+    <view class="sum_item_title">{{item.title}}</view>
+    <view class="sum_item_val">{{item.val}}</view>
+  </view>
+</view>
+
+<view class="detail">
+  <view class="detail_title">
+    <view class="detail_title_text">分类统计</view>
+    <view class="detail_title_type">
+      <text class="{{activeIndex2 == 2 ? 'active':''}}" data-index="2" bindtap="changeType2">专注</text>
+      <text  style="color:darkgray">  |  </text>
+      <text class="{{activeIndex2 == 3 ? 'active':''}}" data-index="3" bindtap="changeType2">欲望</text>
+
+      <text  style="size:10rpx; color:blue;">  |  </text>
+
+      <text class="{{activeIndex == 0 ? 'active':''}}" data-index="0" bindtap="changeType">今日</text>
+      <text  style="color:darkgray">  |  </text>
+      <text class="{{activeIndex == 1 ? 'active':''}}" data-index="1" bindtap="changeType">历史</text>
+    </view>
+  </view>
+
+
+  <view class="detail_list" wx:if="{{list_show.length > 0}}">
+
+    <view class="list_item" wx:for="{{list_show}}" wx:if="{{activeIndex2 == 2}}">
+      <view class="list_item_date">{{item.date}}</view>
+      <view class="list_item_cate">{{cateArr[item.cate].text}}</view>
+      <view class="list_item_time">{{item.time}}分钟 {{item.credit}}积分</view>
+    </view>
+
+    <view class="list_item" wx:for="{{list_show}}" wx:if="{{activeIndex2 == 3}}">
+      <view class="list_item_date">{{item.date}}</view>
+      <view class="list_item_cate">{{item.cate}}</view>
+      <view class="list_item_time">{{item.credit}}积分*{{item.number}}</view>
+    </view>
+  </view>
+
+  <view class="detail_list" wx:if="{{list_show.length == 0}}">
+    暂无数据
+  </view>
+
+</view>

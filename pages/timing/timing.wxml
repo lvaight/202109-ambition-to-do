@@ -1,0 +1,21 @@
+<!--index.wxml-->
+
+<view class="container">
+
+<view class="countdownContainer" >
+<canvas class="counting_circle" canvas-id="bkgd_circle"></canvas>
+<canvas class="counting_circle" canvas-id="dnmc_circle"></canvas>
+<view class="counting_number" wx:if="{{!end_status}}">{{countdown_min}}:{{countdown_sec}}</view>
+<view class="ending_tips" wx:if="{{end_status}}">你已获得{{counting_seconds/60}}专注积分</view>
+</view>
+
+<view class="timingButton" style="margin: 10rpx auto;">
+<button class="button" bindtap="suspend_timing" wx:if="{{!pause_status}}"> 暂停 </button>
+<button class="button" bindtap="resume_timing" wx:if="{{pause_status}}"> 继续 </button>
+<button class="button" bindtap="abort_timing" wx:if="{{!end_status}}"> 中止 </button>
+<view style="margin: 50rpx auto; font-size: xx-small; color: whitesmoke;" wx:if="{{!end_status}}">*若是提前结束，只能获得已专注时间的一半的积分。</view>
+<button class="button" bindtap="finish_timing" wx:if="{{end_status}}"> 结束 </button>
+</view>
+
+
+</view>

@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ambition/ambition",
+    "pages/timing/timing"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#E7624F",
+    "navigationBarTitleText": "To-do",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#E7624F",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "代办",
+        "iconPath": "images/todo.png",
+        "selectedIconPath": "images/todoSelected.png"
+      },
+      {
+        "pagePath": "pages/ambition/ambition",
+        "text": "欲望",
+        "iconPath": "images/ambition.png",
+        "selectedIconPath": "images/ambitionSelected.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "统计",
+        "iconPath": "images/personal.png",
+        "selectedIconPath": "images/personalSelected.png"
+      }
+    ]
+  }
+}
