@@ -16,10 +16,5 @@ The Pomodoro Timer combining "成就清单" - the time we take to complete the t
 
 ​	该微信小程序基本页面参考了b站视频<a href="https://www.bilibili.com/video/BV1PV411k7ie?share_source=copy_web">微信小程序实战——番茄时钟</a>，但是代码都是新建项目独立完成，本人在编写相应的功能时都有预先独立思考和查阅其他博客，有些功能的实现方式完全不同。
 
- <iframe 
-    height=450 
-    width=800 
-    src='https://github.com/lvaight/202109-ambition-to-do/blob/main/ambition-to-do-demo.mp4' 
-    frameborder=0 
-    allowfullscreen="true">
-</iframe>
+
+<img src="https://github.com/lvaight/202109-ambition-to-do/blob/main/ambition-to-do-demo.mp4" alt="Output sample" style="max-width: 100%;">
