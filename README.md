@@ -18,3 +18,7 @@ The Pomodoro Timer combining "成就清单" - the time we take to complete the t
 
 
 <img src="https://github.com/lvaight/202109-ambition-to-do/blob/main/ambition-to-do-demo.mp4" alt="Ambition-to-do-DEMO" style="max-width: 100%;">
+
+
+视频好像无法正常播放，详情见个人主页 http://twilightkk.com/index.php/2021/09/08/cs-wx-miniprogram-to-do/
+
